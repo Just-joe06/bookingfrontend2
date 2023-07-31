@@ -11,7 +11,7 @@ function Login() {
 
     let data = new FormData(e.currentTarget);
 
-    axios.post("http://localhost:8000/login/", data)
+    axios.post("https://justjoe06.pythonanywhere.com/login/", data)
     .then((res) => {
       if(res.data === "Invalid email"){
         alert("Invalid email");
